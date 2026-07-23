@@ -17,6 +17,31 @@ export const metadata: Metadata = {
   title: "Cantata 3B — Technical Validation Preview",
   description:
     "Technical preview of Cantata's 3B-parameter multi-stream generative music model. Lyric-conditioned vocals and stable multi-stream training.",
+  openGraph: {
+    title: "Cantata 3B — Technical Validation Preview",
+    description:
+      "Technical preview of Cantata's 3B-parameter multi-stream generative music model. Lyric-conditioned vocals and stable multi-stream training.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Cantata segment-wise multi-stem architecture diagram",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cantata 3B — Technical Validation Preview",
+    description:
+      "Technical preview of Cantata's 3B-parameter multi-stream generative music model. Lyric-conditioned vocals and stable multi-stream training.",
+    images: [
+      {
+        url: "/og-image.png",
+        alt: "Cantata segment-wise multi-stem architecture diagram",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
