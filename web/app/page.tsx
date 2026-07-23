@@ -60,7 +60,7 @@ export default function Home() {
             Technical Validation Preview
           </p>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
-            Below are results from a training run of Cantata’s 3B multi-stem music generation model. Materials include sample outputs, loss curves, and GPU utilization metrics. The current model and results serve as a technical validation of the underlying architecture rather than a production-ready system. They confirm architectural feasibility, stable multi-stem optimization, and readiness for continued scaling.
+            Below are results from a training run of Cantata’s 3B-parameter multi-stem music generation model. Materials include sample outputs, loss curves, and GPU utilization metrics. The current model and results serve as a technical validation of the underlying architecture rather than a production-ready system. They confirm architectural feasibility, stable multi-stem optimization, and readiness for continued scaling.
           </p>
         </header>
 
