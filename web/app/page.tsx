@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import AudioCard from "@/components/AudioCard";
 
@@ -54,22 +53,14 @@ export default function Home() {
       <main className="mx-auto max-w-4xl px-4 py-16 sm:px-6 md:px-8">
         {/* Hero */}
         <header className="text-center">
-          <Image
-            src="/logo-full.svg"
-            alt="Melodia"
-            width={118}
-            height={32}
-            className="mx-auto dark:invert"
-            priority
-          />
           <h1 className="mt-6 text-3xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
-            Melodia 3B Multi-Stem Music Transformer
+            Cantata 3B Multi-Stem Music Transformer
           </h1>
           <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-            Technical Validation Preview (Pre-NDA)
+            Technical Validation Preview
           </p>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
-            Below are results from a partial training run of Melodia’s 3B multi-stem music generation model. Materials include sample outputs, loss curves, and GPU utilization metrics. The current model and results serve as a technical validation of the underlying architecture rather than a production-ready system. They confirm architectural feasibility, stable multi-stem optimization, and readiness for continued scaling.
+            Below are results from a partial training run of Cantata’s 3B multi-stem music generation model. Materials include sample outputs, loss curves, and GPU utilization metrics. The current model and results serve as a technical validation of the underlying architecture rather than a production-ready system. They confirm architectural feasibility, stable multi-stem optimization, and readiness for continued scaling.
           </p>
         </header>
 
@@ -77,20 +68,20 @@ export default function Home() {
         <nav className="mt-10 flex flex-wrap justify-center gap-4 text-sm">
           <a
             href="#architecture"
-            className="text-melodia-accent hover:underline"
+            className="text-cantata-accent hover:underline"
           >
             Architecture
           </a>
-          <a href="#samples" className="text-melodia-accent hover:underline">
+          <a href="#samples" className="text-cantata-accent hover:underline">
             Samples
           </a>
-          <a href="#training" className="text-melodia-accent hover:underline">
+          <a href="#training" className="text-cantata-accent hover:underline">
             Training
           </a>
-          <a href="#gpu" className="text-melodia-accent hover:underline">
+          <a href="#gpu" className="text-cantata-accent hover:underline">
             GPU
           </a>
-          <a href="#direction" className="text-melodia-accent hover:underline">
+          <a href="#direction" className="text-cantata-accent hover:underline">
             Direction
           </a>
         </nav>
@@ -112,7 +103,7 @@ export default function Home() {
             scalable expansion beyond two streams.
           </p>
           <p className="mt-4 max-w-2xl mx-auto text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
-            The model uses a unified backbone that supports parallel token
+            The model uses a unified Llama backbone that supports parallel token
             streams aligned across time. In this validation run, two streams
             were trained jointly (vocals + accompaniment). The architecture is
             designed to scale to additional stems, e.g. instruments, vocal
@@ -211,18 +202,9 @@ export default function Home() {
             The architecture is designed to support many more stems than the two
             used in this run (vocals + accompaniment). It can extend to
             additional instruments, multiple vocal layers, or spatial streams
-            without a fundamental redesign. Detailed multi-stem expansion hacks and techniques are not shown here but are available for discussion
-            under NDA.
+            without a fundamental redesign.
           </p>
         </section>
-
-        {/* Footer */}
-        <footer className="mt-24 border-t border-zinc-200 pt-8 text-center text-sm text-zinc-500 dark:border-zinc-800 dark:text-zinc-400">
-          This page summarizes validation results only. Detailed architecture,
-          scalable multi-stem methodology, multi-stem expansion roadmap,
-          multi-segment experimentation results, and training artifacts are
-          available for review under NDA.
-        </footer>
       </main>
     </div>
   );

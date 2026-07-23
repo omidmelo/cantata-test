@@ -39,8 +39,8 @@ export default function AudioCard({
       </div>
 
       {lyrics && (
-        <div className="mt-5 rounded-xl border border-zinc-200 border-l-4 border-l-melodia-accent bg-zinc-50/80 p-4 dark:border-zinc-800 dark:bg-zinc-800/80">
-          <div className="text-xs font-semibold uppercase tracking-wide text-melodia-accent">
+        <div className="mt-5 rounded-xl border border-zinc-200 border-l-4 border-l-cantata-accent bg-zinc-50/80 p-4 dark:border-zinc-800 dark:bg-zinc-800/80">
+          <div className="text-xs font-semibold uppercase tracking-wide text-cantata-accent">
             Lyrics
           </div>
           <div className="mt-2 space-y-1 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">

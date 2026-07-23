@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Melodia 3B — Technical Validation Preview",
+  title: "Cantata 3B — Technical Validation Preview",
   description:
-    "Technical preview of Melodia's 3B-parameter multi-stream generative music model. Lyric-conditioned vocals and stable multi-stream training.",
+    "Technical preview of Cantata's 3B-parameter multi-stream generative music model. Lyric-conditioned vocals and stable multi-stream training.",
 };
 
 export default function RootLayout({

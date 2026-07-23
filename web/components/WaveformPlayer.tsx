@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Play, Pause } from "lucide-react";
 import WaveSurfer from "wavesurfer.js";
 
-const MELODIA_ACCENT = "#4653ef";
+const CANTATA_ACCENT = "#4653ef";
 const WAVE_NEUTRAL = "#e4e4e7";
 
 type Props = {
@@ -45,9 +45,9 @@ export default function WaveformPlayer({
       barGap: 2,
       barRadius: 2,
       cursorWidth: 2,
-      cursorColor: MELODIA_ACCENT,
+      cursorColor: CANTATA_ACCENT,
       waveColor: WAVE_NEUTRAL,
-      progressColor: MELODIA_ACCENT,
+      progressColor: CANTATA_ACCENT,
       normalize: false,
     });
 
@@ -103,7 +103,7 @@ export default function WaveformPlayer({
           type="button"
           onClick={toggle}
           disabled={!isReady}
-          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-melodia-accent text-white shadow-sm transition-opacity hover:opacity-90 disabled:opacity-50"
+          className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-cantata-accent text-white shadow-sm transition-opacity hover:opacity-90 disabled:opacity-50"
           aria-label={isPlaying ? "Pause" : "Play"}
         >
           {isPlaying ? (
