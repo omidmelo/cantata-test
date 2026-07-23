@@ -84,6 +84,14 @@ export default function Home() {
           <a href="#direction" className="text-cantata-accent hover:underline">
             Direction
           </a>
+          <a
+            href="https://raw.githubusercontent.com/omidmelo/cantata-test/main/paper.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cantata-accent font-semibold hover:underline"
+          >
+            Read the paper ↗
+          </a>
         </nav>
 
         {/* Architecture */}
@@ -108,7 +116,16 @@ export default function Home() {
             were trained jointly (vocals + accompaniment). The architecture is
             designed to scale to additional stems, e.g. instruments, vocal
             layers, or spatial streams, without duplicating the full parameter
-            set.
+            set. Full architecture and training details are available in the{" "}
+            <a
+              href="https://raw.githubusercontent.com/omidmelo/cantata-test/main/paper.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cantata-accent hover:underline"
+            >
+              paper
+            </a>
+            .
           </p>
         </section>
 
