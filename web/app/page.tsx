@@ -82,7 +82,7 @@ export default function Home() {
             GPU
           </a>
           <a
-            href="https://raw.githubusercontent.com/omidmelo/cantata-test/main/paper.pdf"
+            href="https://raw.githubusercontent.com/omidmelo/cantata-test/main/cantata-paper.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-cantata-accent font-semibold hover:underline"
@@ -115,7 +115,7 @@ export default function Home() {
             layers, or spatial streams, without duplicating the full parameter
             set. Full architecture and training details are available in the{" "}
             <a
-              href="https://raw.githubusercontent.com/omidmelo/cantata-test/main/paper.pdf"
+              href="https://raw.githubusercontent.com/omidmelo/cantata-test/main/cantata-paper.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-cantata-accent hover:underline"
