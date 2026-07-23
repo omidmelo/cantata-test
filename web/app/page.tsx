@@ -60,7 +60,7 @@ export default function Home() {
             Technical Validation Preview
           </p>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
-            Below are results from a partial training run of Cantata’s 3B multi-stem music generation model. Materials include sample outputs, loss curves, and GPU utilization metrics. The current model and results serve as a technical validation of the underlying architecture rather than a production-ready system. They confirm architectural feasibility, stable multi-stem optimization, and readiness for continued scaling.
+            Below are results from a training run of Cantata’s 3B multi-stem music generation model. Materials include sample outputs, loss curves, and GPU utilization metrics. The current model and results serve as a technical validation of the underlying architecture rather than a production-ready system. They confirm architectural feasibility, stable multi-stem optimization, and readiness for continued scaling.
           </p>
         </header>
 
@@ -80,9 +80,6 @@ export default function Home() {
           </a>
           <a href="#gpu" className="text-cantata-accent hover:underline">
             GPU
-          </a>
-          <a href="#direction" className="text-cantata-accent hover:underline">
-            Direction
           </a>
           <a
             href="https://raw.githubusercontent.com/omidmelo/cantata-test/main/paper.pdf"
@@ -205,22 +202,6 @@ export default function Home() {
           <div className="mt-6 max-w-2xl">
             <ChartCard title="GPU utilization" src="/charts/gpu_util.png" />
           </div>
-        </section>
-
-        {/* Architecture Direction */}
-        <section id="direction" className={SECTION_SPACING}>
-          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
-            Direction
-          </p>
-          <h2 className="mt-2 text-xl font-semibold text-zinc-900 dark:text-zinc-100">
-            Architecture Direction
-          </h2>
-          <p className="mt-2 max-w-2xl text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
-            The architecture is designed to support many more stems than the two
-            used in this run (vocals + accompaniment). It can extend to
-            additional instruments, multiple vocal layers, or spatial streams
-            without a fundamental redesign.
-          </p>
         </section>
       </main>
     </div>
